@@ -12,7 +12,7 @@ const responsibilities = [
       "Jab main 'sick leave' (aka bunk) pe hoon, tab class mein 'Present Sir' bolna.",
   },
   {
-    title: "Viva Voce Prep",
+    title: "Viva Prep",
     description:
       "External examiner ke aage meri izzat bachana. Ratwa dena ki Polymorphism kya hota hai.",
   },

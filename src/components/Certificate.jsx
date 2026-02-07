@@ -44,7 +44,7 @@ const Certificate = () => {
             <div className="flex flex-col md:flex-row justify-between w-full mt-auto px-4 md:px-12 gap-8 md:gap-0">
               <div className="text-center">
                 <div className="font-hurricane text-3xl md:text-4xl mb-2 font-serif rotate-[-5deg] break-words">
-                  KaarmKarNaBhai
+                  KaamKarNaBhai
                 </div>
                 <div className="text-xs uppercase tracking-wider border-t border-black pt-1 font-bold">
                   Fake Signature
