@@ -18,7 +18,10 @@ const Certificate = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="bg-white text-black p-8 md:p-12 border-4 border-black relative mx-auto max-w-3xl shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] text-center"
+          drag
+          dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
+          whileDrag={{ scale: 1.1, rotate: 5, cursor: "grabbing" }}
+          className="bg-white text-black p-8 md:p-12 border-4 border-black relative mx-auto max-w-3xl shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] text-center cursor-grab active:cursor-grabbing"
         >
           <div className="border-2 border-dashed border-black p-8 h-full flex flex-col items-center">
             {/* Header */}
@@ -38,9 +41,9 @@ const Certificate = () => {
             </p>
 
             {/* Signatures */}
-            <div className="flex justify-between w-full mt-auto px-4 md:px-12">
+            <div className="flex flex-col md:flex-row justify-between w-full mt-auto px-4 md:px-12 gap-8 md:gap-0">
               <div className="text-center">
-                <div className="font-hurricane text-4xl mb-2 font-serif rotate-[-5deg]">
+                <div className="font-hurricane text-3xl md:text-4xl mb-2 font-serif rotate-[-5deg] break-words">
                   KaarmKarNaBhai
                 </div>
                 <div className="text-xs uppercase tracking-wider border-t border-black pt-1 font-bold">
@@ -48,7 +51,7 @@ const Certificate = () => {
                 </div>
               </div>
               <div className="text-center">
-                <div className="font-hurricane text-4xl mb-2 font-serif rotate-[-5deg]">
+                <div className="font-hurricane text-3xl md:text-4xl mb-2 font-serif rotate-[-5deg] break-words">
                   CEO of Unemployment
                 </div>
                 <div className="text-xs uppercase tracking-wider border-t border-black pt-1 font-bold">

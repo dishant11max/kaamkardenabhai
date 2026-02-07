@@ -7,7 +7,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-tight"
+        className="text-5xl md:text-8xl font-black tracking-tighter mb-8 leading-tight"
       >
         Ek Lab Record Likh De,
         <br />
